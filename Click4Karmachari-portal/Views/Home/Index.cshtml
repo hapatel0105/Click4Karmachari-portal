@@ -1,0 +1,522 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="page-body">
+    <div class="container-fluid">
+        <div class="page-title">
+            <div class="row">
+                <div class="col-6">
+                    <h4>Default </h4>
+                </div>
+                <div class="col-6">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="/Home/Index">
+                                <svg class="stroke-icon">
+                                    <use href="~/content/assets/svg/icon-sprite.svg#stroke-home"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="breadcrumb-item">Dashboard</li>
+                        <li class="breadcrumb-item active">Default      </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Container-fluid starts-->
+    <div class="container-fluid">
+        <div class="row widget-grid">
+            <div class="col-xxl-4 col-sm-6 box-col-6">
+                <div class="card profile-box">
+                    <div class="card-body">
+                        <div class="media media-wrapper justify-content-between">
+                            <div class="media-body">
+                                <div class="greeting-user">
+                                    <h4 class="f-w-600">Welcome, <b>Manan Patel</b> </h4>
+                                    <p>Here whats happing today</p>
+                                    <div class="whatsnew-btn"><a class="btn btn-outline-white">Whats New !</a></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="clockbox">
+                                    <svg id="clock" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+                                        <g id="face">
+                                            <circle class="circle" cx="300" cy="300" r="253.9"></circle>
+                                            <path class="hour-marks" d="M300.5 94V61M506 300.5h32M300.5 506v33M94 300.5H60M411.3 107.8l7.9-13.8M493 190.2l13-7.4M492.1 411.4l16.5 9.5M411 492.3l8.9 15.3M189 492.3l-9.2 15.9M107.7 411L93 419.5M107.5 189.3l-17.1-9.9M188.1 108.2l-9-15.6"></path>
+                                            <circle class="mid-circle" cx="300" cy="300" r="16.2"></circle>
+                                        </g>
+                                        <g id="hour">
+                                            <path class="hour-hand" d="M300.5 298V142"></path>
+                                            <circle class="sizing-box" cx="300" cy="300" r="253.9"></circle>
+                                        </g>
+                                        <g id="minute">
+                                            <path class="minute-hand" d="M300.5 298V67">   </path>
+                                            <circle class="sizing-box" cx="300" cy="300" r="253.9"></circle>
+                                        </g>
+                                        <g id="second">
+                                            <path class="second-hand" d="M300.5 350V55"></path>
+                                            <circle class="sizing-box" cx="300" cy="300" r="253.9">   </circle>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="badge f-10 p-0" id="txt"></div>
+                            </div>
+                        </div>
+                        <div class="cartoon"><img class="img-fluid" src="~/content/assets/images/dashboard/cartoon.svg" alt="vector women with leptop"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-auto col-xl-3 col-sm-6 box-col-6">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="card widget-1">
+                            <div class="card-body">
+                                <div class="widget-content">
+                                    <div class="widget-round secondary">
+                                        <div class="bg-round">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right font-secondary" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z" />
+                                                <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z" />
+                                            </svg>
+                                            <svg class="half-circle svg-fill">
+                                                <use href="~/content/assets/svg/icon-sprite.svg#halfcircle"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-secondary">Total</h4><span class="f-light">Leaves</span>
+                                    </div>
+                                </div>
+                                <div class="font-secondary f-w-500"><i class="icon-arrow-down icon-rotate me-1"></i><span>+2</span></div>
+                            </div>
+                        </div>
+                        <div class="col-xl-12">
+                            <div class="card widget-1">
+                                <div class="card-body">
+                                    <div class="widget-content">
+                                        <div class="widget-round primary">
+                                            <div class="bg-round">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock-history font-primary" viewBox="0 0 16 16">
+                                                    <path d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022zm2.004.45a7 7 0 0 0-.985-.299l.219-.976q.576.129 1.126.342zm1.37.71a7 7 0 0 0-.439-.27l.493-.87a8 8 0 0 1 .979.654l-.615.789a7 7 0 0 0-.418-.302zm1.834 1.79a7 7 0 0 0-.653-.796l.724-.69q.406.429.747.91zm.744 1.352a7 7 0 0 0-.214-.468l.893-.45a8 8 0 0 1 .45 1.088l-.95.313a7 7 0 0 0-.179-.483m.53 2.507a7 7 0 0 0-.1-1.025l.985-.17q.1.58.116 1.17zm-.131 1.538q.05-.254.081-.51l.993.123a8 8 0 0 1-.23 1.155l-.964-.267q.069-.247.12-.501m-.952 2.379q.276-.436.486-.908l.914.405q-.24.54-.555 1.038zm-.964 1.205q.183-.183.35-.378l.758.653a8 8 0 0 1-.401.432z" />
+                                                    <path d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0z" />
+                                                    <path d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5" />
+                                                </svg>
+                                                <svg class="half-circle svg-fill">
+                                                    <use href="~/content/assets/svg/icon-sprite.svg#halfcircle"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-primary">Pending</h4><span class="f-light">Leaves</span>
+                                        </div>
+                                    </div>
+                                    <div class="font-primary f-w-500"><i class="icon-arrow-up icon-rotate me-1"></i><span>+3</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-auto col-xl-3 col-sm-6 box-col-6">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="card widget-1">
+                            <div class="card-body">
+                                <div class="widget-content">
+                                    <div class="widget-round warning">
+                                        <div class="bg-round">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list-task font-warning" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5zM3 3H2v1h1z" />
+                                                <path d="M5 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M5.5 7a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1zm0 4a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1z" />
+                                                <path fill-rule="evenodd" d="M1.5 7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5zM2 7h1v1H2zm0 3.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm1 .5H2v1h1z" />
+                                            </svg>
+                                            <svg class="half-circle svg-fill">
+                                                <use href="~/content/assets/svg/icon-sprite.svg#halfcircle"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-warning">Daily</h4><span class="f-light">Tasks</span>
+                                    </div>
+                                </div>
+                                <div class="font-warning f-w-500"><i class="icon-rotate me-1"></i><span>+7</span></div>
+                            </div>
+                        </div>
+                        <div class="col-xl-12">
+                            <div class="card widget-1">
+                                <div class="card-body">
+                                    <div class="widget-content">
+                                        <div class="widget-round success">
+                                            <div class="bg-round">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-ticket-perforated-fill font-success" viewBox="0 0 16 16">
+                                                    <path d="M0 4.5A1.5 1.5 0 0 1 1.5 3h13A1.5 1.5 0 0 1 16 4.5V6a.5.5 0 0 1-.5.5 1.5 1.5 0 0 0 0 3 .5.5 0 0 1 .5.5v1.5a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 11.5V10a.5.5 0 0 1 .5-.5 1.5 1.5 0 1 0 0-3A.5.5 0 0 1 0 6zm4-1v1h1v-1zm1 3v-1H4v1zm7 0v-1h-1v1zm-1-2h1v-1h-1zm-6 3H4v1h1zm7 1v-1h-1v1zm-7 1H4v1h1zm7 1v-1h-1v1zm-8 1v1h1v-1zm7 1h1v-1h-1z" />
+                                                </svg>
+                                                <svg class="half-circle svg-fill">
+                                                    <use href="~/content/assets/svg/icon-sprite.svg#halfcircle"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-success">Vouchers</h4><span class="f-light">Generated</span>
+                                        </div>
+                                    </div>
+                                    <div class="font-success f-w-500"><i class="icon-rotate me-1"></i><span>5</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-auto col-xl-12 col-sm-6 box-col-6">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="card widget-1">
+                            <div class="card-body">
+                                <div class="widget-content">
+                                    <div class="widget-round font-dark">
+                                        <div class="bg-round">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-journal-text" viewBox="0 0 16 16">
+                                                <path d="M5 10.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5m0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5" />
+                                                <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2" />
+                                                <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1z" />
+                                            </svg>
+                                            <svg class="half-circle  font-dark">
+                                                <use href="~/content/assets/svg/icon-sprite.svg#halfcircle"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h4>Assets</h4><span class="f-light">Total</span>
+                                    </div>
+                                </div>
+                                <div class="font-dark f-w-500"><i class="icon-rotate me-1"></i><span>1</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-12">
+                        <div class="card widget-1">
+                            <div class="card-body">
+                                <div class="widget-content">
+                                    <div class="widget-round success">
+                                        <div class="bg-round">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list-check font-success" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3.854 2.146a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 3.293l1.146-1.147a.5.5 0 0 1 .708 0m0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 7.293l1.146-1.147a.5.5 0 0 1 .708 0m0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0" />
+                                            </svg>
+                                            <svg class="half-circle svg-fill font-success">
+                                                <use href="~/content/assets/svg/icon-sprite.svg#halfcircle"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-success">Completed</h4><span class="f-light">Task</span>
+                                    </div>
+                                </div>
+                                <div class="font-success f-w-500"><i class="icon-rotate me-1"></i><span>6</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xxl-3 box-col-6">
+                <div class="card" style="min-height:510px;">
+                    <div class="card-header card-no-border">
+                        <div class="header-top">
+                            <h5>To do Task</h5>
+                            <div class="card-header-right-icon">
+                                <div class="dropdown icon-dropdown">
+                                    <button class="btn dropdown-toggle" id="recentdropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-more-alt"></i></button>
+                                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="recentdropdown"><a class="dropdown-item" href="#">Weekly</a><a class="dropdown-item" href="#">Monthly</a><a class="dropdown-item" href="#">Yearly</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body pt-0">
+                        <div class="row recent-wrapper">
+                            <div class="col-xl-6" style="width:auto; display:block;">
+                                <ul class="order-content align-items-start" style="gap: 16px;">
+                                    <li>
+                                        <span class="recent-circle bg-primary"> </span>
+                                        <div>
+                                            <span class="f-18 f-w-500">Daily </span>
+                                            <h4><span class="f-light f-14 f-w-400 ms-1">Meeting at 3PM with Boss </span></h4>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="recent-circle bg-primary"> </span>
+                                        <div>
+                                            <span class="f-18 f-w-500">Project (Click4Delivery) </span>
+                                            <h4><span class="f-light f-14 f-w-400 ms-1">Orders Menu glitch.</span></h4>
+                                            <h4><span class="f-light f-14 f-w-400 ms-1">Home screen content flicker in loop.</span></h4>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="recent-circle bg-primary"> </span>
+                                        <div>
+                                            <span class="f-18 f-w-500">Project (Click4Trade) </span>
+                                            <h4><span class="f-light f-14 f-w-400 ms-1">Redesign whole application. </span></h4>
+                                            <h4><span class="f-light f-14 f-w-400 ms-1">Cart item problem. </span></h4>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="recent-circle bg-primary"> </span>
+                                        <div>
+                                            <span class="f-18 f-w-500">Project (Click4Karmachari) </span>
+                                            <h4><span class="f-light f-14 f-w-400 ms-1">Landing page contact Us backend issue.</span></h4>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="recent-circle bg-primary"> </span>
+                                        <div>
+                                            <span class="f-18 f-w-500">Daily </span>
+                                            <h4><span class="f-light f-14 f-w-400 ms-1">Water the plants </span></h4>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-3 box-col-6">
+                <div class="card" style="min-height:510px;">
+                    <div class="card-header card-no-border">
+                        <div class="header-top">
+                            <h5>Running Task</h5>
+                            <div class="card-header-right-icon">
+                                <div class="dropdown icon-dropdown">
+                                    <button class="btn dropdown-toggle" id="recentdropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-more-alt"></i></button>
+                                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="recentdropdown"><a class="dropdown-item" href="#">Weekly</a><a class="dropdown-item" href="#">Monthly</a><a class="dropdown-item" href="#">Yearly</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body pt-0">
+                        <div class="row recent-wrapper">
+                            <div class="col-xl-6" style="width:auto; display:block;">
+                                <ul class="order-content align-items-start" style="gap: 16px;">
+                                    <li>
+                                        <span class="recent-circle bg-primary"> </span>
+                                        <div>
+                                            <span class="f-18 f-w-500">Daily </span>
+                                            <h4><span class="f-light f-14 f-w-400 ms-1">Meeting at 3PM with Boss </span></h4>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="recent-circle bg-primary"> </span>
+                                        <div>
+                                            <span class="f-18 f-w-500">Project (Click4Delivery) </span>
+                                            <h4><span class="f-light f-14 f-w-400 ms-1">Home screen content flicker in loop.</span></h4>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="recent-circle bg-primary"> </span>
+                                        <div>
+                                            <span class="f-18 f-w-500">Project (Click4Trade) </span>
+                                            <h4><span class="f-light f-14 f-w-400 ms-1"> <b>Redesign whole application.</b> </span></h4>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="recent-circle bg-primary"> </span>
+                                        <div>
+                                            <span class="f-18 f-w-500">Project (Click4Karmachari) </span>
+                                            <h4><span class="f-light f-14 f-w-400 ms-1">Whole website / Portal <b>No backend.</b></span></h4>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="recent-circle bg-primary"> </span>
+                                        <div>
+                                            <span class="f-18 f-w-500">Daily </span>
+                                            <h4><span class="f-light f-14 f-w-400 ms-1">Drinking Water </span></h4>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-3 notification box-col-6">
+                <div class="card" style="max-height:510px;">
+                    <div class="card-header card-no-border">
+                        <div class="header-top">
+                            <h5 class="m-0">Upcoming Events</h5>
+                        </div>
+                    </div>
+                    <div class="card-body pt-0" style="overflow:hidden">
+                        <ul>
+                            <li class="d-flex">
+                                <div class="activity-dot-primary"></div>
+                                <div class="w-100 ms-3">
+                                    <p class="d-flex justify-content-between mb-2"><span class="date-content light-background">25th July, 2024 </span></p>
+                                    <h6>Khushi's Birthday<span class="dot-notification"></span></h6>
+                                </div>
+                            </li>
+                            <li class="d-flex">
+                                <div class="activity-dot-secondary"></div>
+                                <div class="w-100 ms-3">
+                                    <p class="d-flex justify-content-between mb-2"><span class="date-content light-background">15th Aug, 2024 </span></p>
+                                    <h6>Harsh's Birthday'<span class="dot-notification"></span></h6>
+                                </div>
+                            </li>
+                            <li class="d-flex">
+                                <div class="activity-dot-warning"></div>
+                                <div class="w-100 ms-3">
+                                    <p class="d-flex justify-content-between mb-2"><span class="date-content light-background">15th Dec, 2024 </span></p>
+                                    <h6>Manan's Birthday<span class="dot-notification"></span></h6>
+                                </div>
+                            </li>
+                            <li class="d-flex">
+                                <div class="activity-dot-success"></div>
+                                <div class="w-100 ms-3">
+                                    <p class="d-flex justify-content-between mb-2"><span class="date-content light-background">20th Dec, 2024 </span></p>
+                                    <h6>Robbin's Birthday<span class="dot-notification"></span></h6>
+                                </div>
+                            </li>
+                            <li class="d-flex">
+                                <div class="activity-dot-primary"></div>
+                                <div class="w-100 ms-3">
+                                    <p class="d-flex justify-content-between mb-2"><span class="date-content light-background">25th Dec, 2024 </span></p>
+                                    <h6>Ted's Birthday<span class="dot-notification"></span></h6>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-3 box-col-6 notification main-timeline">
+                    <div class="card" style="min-height:510px;">
+                        <div class="card-header">
+                            <h5 class="m-0 p-0">Holidays </h5>
+                        </div>
+                        <div class="card-body dark-timeline" style="overflow:hidden">
+                            <div class="container" style=" height:300px; transition:ease-in-out;">
+                                <ul>
+                                    <li class="d-flex">
+                                        <div class="timeline-dot-primary"></div>
+                                        <div class="w-100 ms-3">
+                                            <p class="d-flex justify-content-between"><span class="date-content light-background">1 Jan 2024</span></p>
+                                            <h6>HAPPY NEW YEAR<span class="dot-notification"></span></h6>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex">
+                                        <div class="timeline-dot-secondary"></div>
+                                        <div class="w-100 ms-3">
+                                            <p class="d-flex justify-content-between mb-2"><span class="date-content light-background">14 Jan 2024</span></p>
+                                            <h6>UTTRAYAN<span class="dot-notification"></span></h6>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex">
+                                        <div class="timeline-dot-success"></div>
+                                        <div class="w-100 ms-3">
+                                            <p class="d-flex justify-content-between mb-2"><span class="date-content light-background">26 Jan 2024</span></p>
+                                            <h6>REPUBLIC DAY<span class="dot-notification"></span></h6>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex">
+                                        <div class="timeline-dot-primary"></div>
+                                        <div class="w-100 ms-3">
+                                            <p class="d-flex justify-content-between mb-2"><span class="date-content light-background">14 Feb 2024</span></p>
+                                            <h6>VALENTINE DAY<span class="dot-notification"></span></h6>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex">
+                                        <div class="timeline-dot-secondary"></div>
+                                        <div class="w-100 ms-3">
+                                            <p class="d-flex justify-content-between mb-2"><span class="date-content light-background">22 March 2024</span></p>
+                                            <h6>SHIVRATRI<span class="dot-notification"></span></h6>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex">
+                                        <div class="timeline-dot-success"></div>
+                                        <div class="w-100 ms-3">
+                                            <p class="d-flex justify-content-between mb-2"><span class="date-content light-background">1 April 2024</span></p>
+                                            <h6>APRIL FOOL DAY<span class="dot-notification"></span></h6>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex">
+                                        <div class="timeline-dot-primary"></div>
+                                        <div class="w-100 ms-3">
+                                            <p class="d-flex justify-content-between mb-2"><span class="date-content light-background">12 April 2024</span></p>
+                                            <h6>HOLIDAY<span class="dot-notification"></span></h6>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex">
+                                        <div class="timeline-dot-secondary"></div>
+                                        <div class="w-100 ms-3">
+                                            <p class="d-flex justify-content-between mb-2"><span class="date-content light-background">22 April 2024</span></p>
+                                            <h6>GOOD FRIDAY<span class="dot-notification"></span></h6>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex">
+                                        <div class="timeline-dot-success"></div>
+                                        <div class="w-100 ms-3">
+                                            <p class="d-flex justify-content-between mb-2"><span class="date-content light-background">30 April 2024</span></p>
+                                            <h6>END OF MONTH HOLIDAY<span class="dot-notification"></span></h6>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <!-- Container-fluid Ends-->
+</div>
+
+<script src="~/Content/assets/js/jquery.min.js"></script>
+
+<script src="~/Content/assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+
+<script src="~/Content/assets/js/icons/feather-icon/feather.min.js"></script>
+<script src="~/Content/assets/js/icons/feather-icon/feather-icon.js"></script>
+
+<script src="~/Content/assets/js/scrollbar/custom.js"></script>
+<script src="~/Content/assets/js/scrollbar/simplebar.js"></script>
+
+<script src="~/Content/assets/js/config.js"></script>
+
+<script src="~/Content/assets/js/clock.js"></script>
+<script src="~/Content/assets/js/slick/slick.js"></script>
+<script src="~/Content/assets/js/slick/slick.min.js"></script>
+<script src="~/Content/assets/js/header-slick.js"></script>
+<script src="~/Content/assets/js/chart/apex-chart/apex-chart.js"></script>
+<script src="~/Content/assets/js/chart/apex-chart/stock-prices.js"></script>
+<script src="~/Content/assets/js/chart/apex-chart/moment.min.js"></script>
+<script src="~/Content/assets/js/notify/index.js"></script>
+<script src="~/Content/assets/js/typeahead/typeahead.bundle.js"></script>
+<script src="~/Content/assets/js/typeahead/typeahead.custom.js"></script>
+<script src="~/Content/assets/js/typeahead-search/handlebars.js"></script>
+<script src="~/Content/assets/js/height-equal.js"></script>
+<script src="~/Content/assets/js/animation/wow/wow.min.js"></script>
+<script src="~/Content/assets/js/typeahead-search/typeahead-custom.js"></script>
+<script src="~/Content/assets/js/dashboard/default.js"></script>
+
+
+<script src="~/Content/assets/js/script.js"></script>
+
+<script>new WOW().init();</script>
+<script>
+    $(function () {
+        var tickerLength = $('.container ul li').length;
+        var tickerHeight = $('.container ul li').outerHeight();
+        $('.container ul li:last-child').prependTo('.container ul');
+        $('.container ul').css('marginTop', );
+        function moveTop() {
+            $('.container ul').animate({
+                top: -tickerHeight
+            }, 600, function () {
+                $('.container ul li:first-child').appendTo('.container ul');
+                $('.container ul').css('top', '');
+            });
+        }
+        setInterval(function () {
+            moveTop();
+        }, 3000);
+    });
+</script>

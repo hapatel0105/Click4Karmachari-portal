@@ -1,0 +1,185 @@
+﻿
+@{
+    ViewBag.Title = "Resignation";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="page-body">
+    <div class="container-fluid">
+        <div class="page-title">
+            <div class="row">
+                <div class="col-6">
+                    <h3>Resignation</h3>
+                </div>
+                <div class="col-6">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="/Home/Index">
+                                <svg class="stroke-icon">
+                                    <use href="~/content/assets/svg/icon-sprite.svg#stroke-home"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="breadcrumb-item">Users</li>
+                        <li class="breadcrumb-item active"> Resignation</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Container-fluid starts-->
+    <div class="container-fluid">
+        <div class="edit-profile">
+            <div class="row">
+                <div class="col-xl-12">
+                    <form class="card">
+                        <div class="card-header">
+                            <h4 class="card-title mb-0">Resignation Request</h4>
+                            <div class="card-options">
+                                <a class="card-options-collapse" href="#" data-bs-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a>
+                                <a class="card-options-remove" href="#" data-bs-toggle="card-remove"><i class="fe fe-x"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Date of joining</label>
+                                        <input class="form-control" type="date" placeholder="Date of Joining" required="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-md-3">
+                                    <div class="mb-3">
+                                        <label class="form-label">Designation</label>
+                                        <select class="form-control" aria-label="Default select example" required="">
+                                            <option selected>Select Designation</option>
+                                            <option value="1">Manager</option>
+                                            <option value="2">Data Operator</option>
+                                            <option value="3">Administrator</option>
+                                            <option value="4">HR</option>
+                                            <option value="5">Android Developer</option>
+                                            <option value="6">Dot Net Developer</option>
+                                            <option value="7">MVC Developer</option>
+                                            <option value="8">IOS Developer</option>
+                                            <option value="9">Accountant</option>
+                                            <option value="10">Sr. Flutter Developer</option>
+                                            <option value="11">Sr. Dot Net Developer</option>
+                                            <option value="12">Graphic Designer</option>
+                                            <option value="13">Hardware Engineer</option>
+                                            <option value="14">Flutter Developer</option>
+                                            <option value="15">Project Manager</option>
+                                            <option value="16">Receptionist</option>
+                                            <option value="17">Sr. Administrator</option>
+                                            <option value="18">Support Assistant</option>
+                                            <option value="19">UI/UX Designer</option>
+                                            <option value="20">Sales Executive</option>
+                                            <option value="21">Telecalling</option>
+                                            <option value="22">Web Designer</option>
+                                            <option value="23">BDM</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-md-4">
+                                    <div class="mb-3">
+                                        <label class="form-label">Department</label>
+                                        <select class="form-control" aria-label="Default select example" required="">
+                                            <option selected>Select Department</option>
+                                            <option value="1">IT</option>
+                                            <option value="2">Sales</option>
+                                            <option value="3">HR</option>
+                                            <option value="4">Admin</option>
+                                            <option value="5">Manager</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Team Name</label>
+                                        <input class="form-control" type="text" placeholder="Team Name" required="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Reporting Manager</label>
+                                        <select class="form-control" aria-label="Default select example" required="">
+                                            <option selected>Select Manager</option>
+                                            <option value="1">Harsh Patel</option>
+                                            <option value="2">Khushi Vyas</option>
+                                            <option value="3">Manan Patel</option>
+                                            <option value="4">Divya Patel</option>
+                                            <option value="5">Mitesh Shere</option>
+                                            <option value="6">Hitesh Patel</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Reliving Date</label>
+                                        <input class="form-control" type="date" placeholder="Adhar card number" required="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-md-4">
+                                    <div class="mb-3">
+                                        <label class="form-label">Reason For Exit</label>
+                                        <input class="form-control" type="text" placeholder="Reason for exit" required="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-md-3">
+                                    <div class="mb-3">
+                                        <label class="form-label">Remark for resignation</label>
+                                        <input class="form-control" type="text" placeholder="Remark for resignation" required="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-md-3">
+                                    <div class="mb-3">
+                                        <label class="form-label">Suggestion for company</label>
+                                        <input class="form-control" type="text" placeholder="Suggestion for company" required="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer text-end">
+                            <button class="btn btn-primary" type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                
+                
+                
+
+                
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/Content/assets/js/jquery.min.js"></script>
+
+<script src="~/Content/assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+
+<script src="~/Content/assets/js/icons/feather-icon/feather.min.js"></script>
+<script src="~/Content/assets/js/icons/feather-icon/feather-icon.js"></script>
+
+<script src="~/Content/assets/js/scrollbar/custom.js"></script>
+<script src="~/Content/assets/js/scrollbar/simplebar.js"></script>
+
+<script src="~/Content/assets/js/config.js"></script>
+
+<script src="~/Content/assets/js/clock.js"></script>
+<script src="~/Content/assets/js/slick/slick.js"></script>
+<script src="~/Content/assets/js/slick/slick.min.js"></script>
+<script src="~/Content/assets/js/header-slick.js"></script>
+<script src="~/Content/assets/js/chart/apex-chart/apex-chart.js"></script>
+<script src="~/Content/assets/js/chart/apex-chart/stock-prices.js"></script>
+<script src="~/Content/assets/js/chart/apex-chart/moment.min.js"></script>
+<script src="~/Content/assets/js/notify/index.js"></script>
+<script src="~/Content/assets/js/typeahead/typeahead.bundle.js"></script>
+<script src="~/Content/assets/js/typeahead/typeahead.custom.js"></script>
+<script src="~/Content/assets/js/typeahead-search/handlebars.js"></script>
+<script src="~/Content/assets/js/height-equal.js"></script>
+<script src="~/Content/assets/js/animation/wow/wow.min.js"></script>
+<script src="~/Content/assets/js/typeahead-search/typeahead-custom.js"></script>
+
+<script src="~/Content/assets/js/script.js"></script>

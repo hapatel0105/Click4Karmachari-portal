@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34714.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Click4Karmachari-portal", "Click4Karmachari-portal\Click4Karmachari-portal.csproj", "{6F077E83-0381-4090-AA40-2342CA9EF7C3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6F077E83-0381-4090-AA40-2342CA9EF7C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F077E83-0381-4090-AA40-2342CA9EF7C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F077E83-0381-4090-AA40-2342CA9EF7C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F077E83-0381-4090-AA40-2342CA9EF7C3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {670F9AAB-44BD-4285-9103-97E7FF949947}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,390 @@
+﻿
+@{
+    ViewBag.Title = "Voucher_req";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="page-body">
+    <div class="container-fluid">
+        <div class="page-title">
+            <div class="row">
+                <div class="col-6">
+                    <h3>Request Voucher</h3>
+                </div>
+                <div class="col-6">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="/Home/Index">
+                                <svg class="stroke-icon">
+                                    <use href="~/content/assets/svg/icon-sprite.svg#stroke-home"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="breadcrumb-item">Users</li>
+                        <li class="breadcrumb-item active"> Request-Voucher</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Container-fluid starts-->
+
+    <div class="container-fluid">
+        <div class="edit-profile">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <h4 class="card-title mb-0">Voucher Request</h4>
+                                </div>
+                                <div class="col-lg-6 d-flex justify-content-end align-items-end" onclick="myfunctionVoucher()">
+                                    <button class="btn btn-primary" onclick="return Emp_AdvanceReq(0,'','','','','','',0,0,'11 April 2024','11 April 2024','')" type="submit"><i class="feather feather-plus fs-15 my-auto mr-2"></i><strong>+ Request Voucher</strong></button>
+                                </div>
+                            </div>
+                            <div class="card-options">
+                                <a class="card-options-collapse" href="#" data-bs-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a>
+                                <a class="card-options-remove" href="#" data-bs-toggle="card-remove"><i class="fe fe-x"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-6">
+                                </div>
+                                <div class="col-6  d-flex justify-content-end">
+                                    <div id="basic-datatable_filter" class="dataTables_filter">
+                                        <label><input type="search" class="form-control" placeholder="Search..." aria-controls="basic-datatable"></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table-responsive">
+                                <div id="basic-datatable_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <table class="table table-striped table-hover table-bordered text-nowrap border-bottom dataTable no-footer" id="basic-datatable" role="grid" aria-describedby="basic-datatable_info">
+                                                <thead>
+                                                    <tr role="row">
+                                                        <th class="border-bottom-0 text-center sorting_asc" tabindex="0" aria-controls="basic-datatable" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Image: activate to sort column descending" style="width: 140.234px;">Image</th>
+                                                        <th class="border-bottom-0 sorting" tabindex="0" aria-controls="basic-datatable" rowspan="1" colspan="1" aria-label="Date: activate to sort column ascending" style="width: 117.156px;">Date</th>
+                                                        <th class="border-bottom-0 sorting" tabindex="0" aria-controls="basic-datatable" rowspan="1" colspan="1" aria-label="Total Amount: activate to sort column ascending" style="width: 240.156px;">Total Amount</th>
+                                                        <th class="border-bottom-0 sorting" tabindex="0" aria-controls="basic-datatable" rowspan="1" colspan="1" aria-label="Payable/Receivable Amount: activate to sort column ascending" style="width: 446.875px;">Payable/Receivable Amount</th>
+                                                        <th class="border-bottom-0 sorting" tabindex="0" aria-controls="basic-datatable" rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending" style="width: 143.234px;">Status</th>
+                                                        <th class="border-bottom-0 sorting" tabindex="0" aria-controls="basic-datatable" rowspan="1" colspan="1" aria-label="Operation: activate to sort column ascending" style="width: 190.344px;">Operation</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="odd"><td valign="top" colspan="6" class="dataTables_empty">No data available in table</td></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div><div class="row"><div class="col-sm-12 col-md-5"><div class="dataTables_info" id="basic-datatable_info" role="status" aria-live="polite">Showing 0 to 0 of 0 entries</div></div><div class="col-sm-12 col-md-7"><div class="dataTables_paginate paging_simple_numbers" id="basic-datatable_paginate"><ul class="pagination"><li class="paginate_button page-item previous disabled" id="basic-datatable_previous"><a href="#" aria-controls="basic-datatable" data-dt-idx="0" tabindex="0" class="page-link">Previous</a></li><li class="paginate_button page-item next disabled" id="basic-datatable_next"><a href="#" aria-controls="basic-datatable" data-dt-idx="1" tabindex="0" class="page-link">Next</a></li></ul></div></div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="Model_Emp_AdvanceReq" tabindex="-1" role="dialog" aria-hidden="true">
+                <form action="/Employee/AdvanceReq_Add?Length=8" data-ajax="true" data-ajax-method="POST" data-ajax-success="OnUpdateUserEAdvReq" enctype="multipart/form-data" id="form" method="post" onsubmit="return submitadvreq();" role="form">
+                    <div class="modal-dialog" >
+                        <div class="modal-content" style="width:900px; margin-left:-200px;">
+                            <div class="col-md-12 " style="display:none;text-align:center" id="request">
+                                <div class="alert_R" style="border-radius: 5px; color: white;padding:inherit; background-color: #f91a1ab8 ">
+                                    <span id="failuremsg"></span>
+                                    <span class="closebtn" style="float:right">&times;</span>
+                                </div>
+                            </div>
+                            <div class="modal-header">
+                                <h5 class="modal-title">Request Voucher</h5>
+                            </div>
+                            <div class="modal-body">
+                                <input name="__RequestVerificationToken" type="hidden" value="LgqIPIxfmXNENsrtAyOzRDN3IivkmpX7jxzkgHx_EpC49N6cZtxHK7zMytvbxNWnKqn9Gfjd5LF1DQcZq-MMKjbSKB1MVMT9j_TX3hyU1ZU1" />
+                                <input type="hidden" name="Req_Id" id="Req_Id" value="0">
+                                <div class="row">
+                                    <div class="col-lg-6 form-group">
+                                        <label class="form-label">Request Number <span class="text-red">*</span></label>
+                                        <select onchange="gerequest()" name="request_Type" id="request_Type" class="form-control" required>
+                                            <option value="">Select Request Number</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-6 form-group" id="demo">
+                                        <label class="form-label">Project Name</label>
+                                        <select name="Project_Id" id="Project_Id" class="form-control">
+                                            <option value="">Select Project</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <br />
+                                <div class="row">
+                                    <div class="col-lg-6 form-group">
+                                        <label class="form-label">Voucher Date</label>
+                                        <input type="date" name="S_Date" required id="S_Date" class="form-control fc-datepicker" placeholder="01 January 2022" />
+                                    </div>
+                                    <div class="col-lg-6 form-group">
+                                        <label class="form-label">Parent Type <span class="text-red">*</span></label>
+                                        <select onchange="getparent()" name="Parent_Type" id="Parent_Type" class="form-control" required>
+                                            <option value="">Select below option</option>
+                                            <option value="Project">Project</option>
+                                            <option value="Opportunity">Opportunity</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <br />
+                                <div class="row">
+                                    <div class="col-lg-6 form-group">
+                                        <label class="form-label">Visiting Company <span class="text-red">*</span></label>
+                                        <input type="text" name="Place" required id="Place" style="margin:auto;" class="form-control" placeholder="Enter place">
+                                    </div>
+                                    <div class="col-lg-6 form-group">
+                                        <label class="form-label">Petrol <span class="text-red">*</span></label>
+                                        <input type="text" name="Petrol" onkeyup="sum();" value="0" id="Petrol" required class="form-control" />
+                                    </div>
+                                </div>
+                                <br />
+                                <div class="row">
+                                    <div class="col-lg-6 form-group">
+                                        <label class="form-label">Mobile Charges <span class="text-red">*</span></label>
+                                        <input type="text" name="Mobile" onkeyup="sum();" value="0" id="Mobile" required class="form-control" />
+                                    </div>
+                                    <div class="col-lg-6 form-group">
+                                        <label class="form-label"> Travelling <span class="text-red">*</span></label>
+                                        <input type="text" name="Travelling" onkeyup="sum();" value="0" id="Travelling" required class="form-control" />
+                                    </div>
+                                </div>
+                                <br />
+                                <div class="row">
+                                    <div class="col-lg-6 form-group">
+                                        <label class="form-label">Conveyance <span class="text-red">*</span></label>
+                                        <input type="text" name="Conveyance" onkeyup="sum();" value="0" id="Conveyance" required class="form-control" />
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label class="form-label form-group">Total Amount <span class="text-red">*</span></label>
+                                        <input type="text" name="Total_Amount" readonly value="0" id="Total_Amount" required class="form-control" />
+                                    </div>
+                                </div>
+                                <br />
+                                <div class="row">
+                                    <div class="col-lg-6 form-group">
+                                        <label class="form-label">Deduction Amount</label>
+                                        <input type="text" name="Deduction_Amount" value="0" onkeyup="sub();" id="Deduction_Amount" class="form-control" />
+                                    </div>
+                                    <div class="col-lg-6 form-group">
+                                        <label class="form-label">Payable/Receivable <span class="text-red">*</span></label>
+                                        <input type="text" name="Payable_Amount" required readonly id="Payable_Amount" class="form-control" />
+                                    </div>
+                                </div>
+                                <br />
+                                <div class="row">
+                                    <div class="col-lg-6 form-group">
+                                        <label class="form-label">Transaction Type</label>
+                                        <input type="hidden" name="Trans_Type" id="Trans_Type" class="form-control" />
+                                        <input type="text" name="Trans_Type_Name" id="Trans_Type_Name" required class="form-control" readonly />
+                                    </div>
+                                    <div class="col-lg-6 form-group">
+                                        <label class="form-label">Choose File</label>
+                                        <div class="custom-file">
+                                            <input type="file" name="file" id="file" class="custom-file-input form-control">
+                                        </div><span class="text-lightpink-red">[ Allow Only .jpg .png .jpeg .pdf (5MB) ]</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-light" data-dismiss="modal" onclick="myfunctionVoucher()" id="exit">&ensp;<b style="color:#222222">Close</b></button>
+                                <button type="submit" id="savebtn" name="Command" value="Save" class="btn btn-info">&ensp;Save</button>
+                                <button type="submit" id="deletebtn" name="Command" value="Delete" class="btn btn-danger"></i>&ensp;Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    function getparent() {
+        var Parent_Type = document.getElementById('Parent_Type').value;
+        if (Parent_Type == "Opportunity") {
+            document.getElementById("demo").hidden = true;
+        }
+        else {
+            document.getElementById("demo").hidden = false;
+        }
+    }
+    var isSubmitted = false;
+
+    function stopMultipleSubmitAdvReq() {
+        if (!isSubmitted) {
+            $("#savebtn").prop('disabled', true);
+            isSubmitted = true;
+            return true;
+        }
+        else {
+            $("#savebtn").prop('disabled', false);
+            isSubmitted = false;
+            return false;
+        }
+    }
+    function submitadvreq() {
+
+        stopMultipleSubmitAdvReq();
+
+        return isSubmitted;
+    }
+    function myfunctionVoucher() {
+
+        document.getElementById("request").style.display = "none";
+        $("#Model_Emp_AdvanceReq").modal('show');
+
+        document.getElementById("exit").style.display = "block";
+        $("#Model_Emp_AdvanceReq").modal('hide');
+    }
+    function getparent() {
+        var Parent_Type = document.getElementById('Parent_Type').value;
+
+        if (Parent_Type == "Opportunity") {
+            document.getElementById("demo").hidden = true;
+        }
+        else {
+            document.getElementById("demo").hidden = false;
+        }
+    }
+
+    function sub() {
+        var Deduction_Amount = document.getElementById('Deduction_Amount').value;
+        if (Deduction_Amount == null || Deduction_Amount == "" || Deduction_Amount == 0) {
+            document.getElementById('Deduction_Amount').value = 0;
+            var Final_Amt = document.getElementById('Total_Amount').value;
+            document.getElementById('Payable_Amount').value = Final_Amt;
+        }
+        var Total_Amount = document.getElementById('Total_Amount').value;
+        var Payable_Amount = parseInt(Total_Amount) - parseInt(Deduction_Amount);
+
+
+        var Grant_Amt = document.getElementById('Granted_Amount').value;
+
+        if (Grant_Amt == null || Grant_Amt == "") {
+            Grant_Amt = 0;
+        }
+        if (Grant_Amt > Payable_Amount) {
+            var Final_Amt = Grant_Amt - Payable_Amount;
+            document.getElementById('Payable_Amount').value = "-" + Final_Amt;
+            document.getElementById('Trans_Type').value = 2;
+            document.getElementById('Trans_Type_Name').value = "Debit";
+
+        }
+        if (Grant_Amt < Payable_Amount) {
+            var Final_Amt = Payable_Amount - Grant_Amt;
+            document.getElementById('Payable_Amount').value = "+" + Final_Amt;
+            document.getElementById('Trans_Type').value = 1;
+            document.getElementById('Trans_Type_Name').value = "Credit";
+
+        }
+        if (Grant_Amt == Total_Amount) {
+
+            document.getElementById('Payable_Amount').value = 0;
+        }
+    }
+
+    function sum() {
+
+        var Petrol = document.getElementById('Petrol').value;
+
+        if (Petrol == null || Petrol == "") {
+            Petrol = 0;
+        }
+        var Mobile = document.getElementById('Mobile').value;
+        if (Mobile == null || Mobile == "") {
+            Mobile = 0;
+        }
+        var Travelling = document.getElementById('Travelling').value;
+        if (Travelling == null || Travelling == "") {
+            Travelling = 0;
+        }
+        var Conveyance = document.getElementById('Conveyance').value;
+        if (Conveyance == null || Conveyance == "") {
+            Conveyance = 0;
+        }
+
+        var Total_Amount = parseInt(Petrol) + parseInt(Mobile) + parseInt(Travelling) + parseInt(Conveyance);
+        document.getElementById('Total_Amount').value = Total_Amount;
+
+        var Deduction_Amount = document.getElementById('Deduction_Amount').value;
+        if (Deduction_Amount == null || Deduction_Amount == "" || Deduction_Amount == 0) {
+            document.getElementById('Deduction_Amount').value = 0;
+            var Final_Amt = document.getElementById('Total_Amount').value;
+            document.getElementById('Payable_Amount').value = Final_Amt;
+        }
+        var Total_Amount = document.getElementById('Total_Amount').value;
+        var Payable_Amount = parseInt(Total_Amount) - parseInt(Deduction_Amount);
+
+
+        var Grant_Amt = document.getElementById('Granted_Amount').value;
+        if (Grant_Amt == null || Grant_Amt == "") {
+            Grant_Amt = 0;
+        }
+        if (Grant_Amt > Payable_Amount) {
+            var Final_Amt = Grant_Amt - Payable_Amount;
+            document.getElementById('Payable_Amount').value = "-" + Final_Amt;
+            document.getElementById('Trans_Type').value = 2;
+            document.getElementById('Trans_Type_Name').value = "Debit";
+        }
+        if (Grant_Amt < Payable_Amount) {
+            var Final_Amt = Payable_Amount - Grant_Amt;
+            document.getElementById('Payable_Amount').value = "+" + Final_Amt;
+            document.getElementById('Trans_Type').value = 1;
+            document.getElementById('Trans_Type_Name').value = "Credit";
+        }
+        if (Grant_Amt == Total_Amount) {
+
+            document.getElementById('Payable_Amount').value = 0;
+        }
+    }
+    function getPlace() {
+        var Req_No = document.getElementById("Req_Id").value;
+
+        $.ajax({
+            type: "POST",
+            url: "/Employee/GetReq?Req_No=" + Req_No,
+            data: "{}",
+            success: function (data) {
+                var pGranted_Amount = data.Granted_Amount;
+                document.getElementById("Granted_Amount").value = pGranted_Amount;
+            },
+            error: function (errormessage) {
+                //alert("error...");
+                //alert(errormessage);
+            }
+        });
+    }
+</script>
+<script src="~/Content/assets/js/jquery.min.js"></script>
+
+<script src="~/Content/assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+
+<script src="~/Content/assets/js/icons/feather-icon/feather.min.js"></script>
+<script src="~/Content/assets/js/icons/feather-icon/feather-icon.js"></script>
+
+<script src="~/Content/assets/js/scrollbar/custom.js"></script>
+<script src="~/Content/assets/js/scrollbar/simplebar.js"></script>
+
+<script src="~/Content/assets/js/config.js"></script>
+
+<script src="~/Content/assets/js/clock.js"></script>
+<script src="~/Content/assets/js/slick/slick.js"></script>
+<script src="~/Content/assets/js/slick/slick.min.js"></script>
+<script src="~/Content/assets/js/header-slick.js"></script>
+<script src="~/Content/assets/js/chart/apex-chart/apex-chart.js"></script>
+<script src="~/Content/assets/js/chart/apex-chart/stock-prices.js"></script>
+<script src="~/Content/assets/js/chart/apex-chart/moment.min.js"></script>
+<script src="~/Content/assets/js/notify/index.js"></script>
+<script src="~/Content/assets/js/typeahead/typeahead.bundle.js"></script>
+<script src="~/Content/assets/js/typeahead/typeahead.custom.js"></script>
+<script src="~/Content/assets/js/typeahead-search/handlebars.js"></script>
+<script src="~/Content/assets/js/height-equal.js"></script>
+<script src="~/Content/assets/js/animation/wow/wow.min.js"></script>
+<script src="~/Content/assets/js/typeahead-search/typeahead-custom.js"></script>
+
+<script src="~/Content/assets/js/script.js"></script>
+

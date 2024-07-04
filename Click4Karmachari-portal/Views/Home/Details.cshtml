@@ -1,0 +1,523 @@
+﻿
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="page-body">
+    <div class="container-fluid">
+        <div class="page-title">
+            <div class="row">
+                <div class="col-6">
+                    <h3>Edit Profile</h3>
+                </div>
+                <div class="col-6">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="/Home/Index">
+                                <svg class="stroke-icon">
+                                    <use href="~/content/assets/svg/icon-sprite.svg#stroke-home"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="breadcrumb-item">Users</li>
+                        <li class="breadcrumb-item active"> Edit Profile</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Container-fluid starts-->
+    <div class="container-fluid">
+        <div class="edit-profile">
+            <div class="row">
+                <div class="col-xl-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title mb-0">My Profile</h4>
+                            <div class="card-options">
+                                <a class="card-options-collapse" href="#" data-bs-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a>
+                                <a class="card-options-remove" href="#" data-bs-toggle="card-remove"><i class="fe fe-x"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <div class="row mb-2">
+                                    <div class="profile-title">
+                                        <div class="media">
+                                            <img class="img-70 rounded-circle" alt="" src="~/content/assets/images/user/121.png">
+                                            <div class="media-body">
+                                                <h5 class="mb-1">MANAN PATEL</h5>
+                                                <p>UI/UX DESIGNER</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="form-label">Email-Address</label>
+                                    <input class="form-control" placeholder="your-email@domain.com">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Password</label>
+                                    <input class="form-control" type="password" value="password">
+                                </div>
+                                <div class="form-footer">
+                                    <button class="btn btn-primary btn-block">Save</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-8">
+                    <form class="card">
+                        <div class="card-header">
+                            <h4 class="card-title mb-0">Employee Details</h4>
+                            <div class="card-options">
+                                <a class="card-options-collapse" href="#" data-bs-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a>
+                                <a class="card-options-remove" href="#" data-bs-toggle="card-remove"><i class="fe fe-x"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Full Name</label>
+                                        <input class="form-control" type="text" placeholder="Name" required="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-md-3">
+                                    <div class="mb-3">
+                                        <label class="form-label">Contact Number</label>
+                                        <input class="form-control" type="text" placeholder="Contact Number" required="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-md-4">
+                                    <div class="mb-3">
+                                        <label class="form-label">Email address</label>
+                                        <input class="form-control" type="email" placeholder="Email" required="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Date of birth</label>
+                                        <input class="form-control" type="date" placeholder="Date of birth" required="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Blood Group</label>
+                                        <input class="form-control" type="text" placeholder="Blood Group" required="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Adhar card Number</label>
+                                        <input class="form-control" type="text" placeholder="Adhar card number" required="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-md-4">
+                                    <div class="mb-3">
+                                        <label class="form-label">City</label>
+                                        <input class="form-control" type="text" placeholder="City" required="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-md-3">
+                                    <div class="mb-3">
+                                        <label class="form-label">PAN card number</label>
+                                        <input class="form-control" type="number" placeholder="PAN card number" required="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-md-3">
+                                    <div class="mb-3">
+                                        <label class="form-label">Religion</label>
+                                        <input class="form-control" type="text" placeholder="Religion" required="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer text-end">
+                            <button class="btn btn-primary" type="submit">Update Details</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-12">
+                    <form class="card">
+                        <div class="card-header">
+                            <h4 class="card-title mb-0">Company Details</h4>
+                            <div class="card-options">
+                                <a class="card-options-collapse" href="#" data-bs-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a>
+                                <a class="card-options-remove" href="#" data-bs-toggle="card-remove"><i class="fe fe-x"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="mb-3">
+                                        <label class="form-label">Department</label>
+                                        <input class="form-control" type="text" placeholder="Department" required="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 col-md-3">
+                                    <div class="mb-3">
+                                        <label class="form-label">Designation</label>
+                                        <input class="form-control" type="text" placeholder="Designation" required="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 col-md-3">
+                                    <div class="mb-3">
+                                        <label class="form-label">Date of joining</label>
+                                        <input class="form-control" type="date" placeholder="Date of joining" required="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 col-md-3">
+                                    <div class="mb-3">
+                                        <label class="form-label">Reporting Person</label>
+                                        <input class="form-control" type="text" placeholder="Reporting Person" required="">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="mb-3">
+                                        <label class="form-label">Team Name</label>
+                                        <input class="form-control" type="text" placeholder="Team Name" required="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 col-md-3">
+                                    <div class="mb-3">
+                                        <label class="form-label">Posted At</label>
+                                        <input class="form-control" type="text" placeholder="Posted At" required="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 col-md-3">
+                                    <div class="mb-3">
+                                        <label class="form-label">Company Email</label>
+                                        <input class="form-control" type="email" placeholder="Company Email" required="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 col-md-3">
+                                    <div class="mb-3">
+                                        <label class="form-label">Employee type</label>
+                                        <input class="form-control" type="text" placeholder="Employee Type" required="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer text-end">
+                            <button class="btn btn-primary" type="submit">Update</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-12">
+                    <form class="card">
+                        <div class="card-header">
+                            <h4 class="card-title mb-0">Bank Details</h4>
+                            <div class="card-options">
+                                <a class="card-options-collapse" href="#" data-bs-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a>
+                                <a class="card-options-remove" href="#" data-bs-toggle="card-remove"><i class="fe fe-x"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="mb-3">
+                                        <label class="form-label">Account Number</label>
+                                        <input class="form-control" type="text" placeholder="Account Number" required="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 col-md-3">
+                                    <div class="mb-3">
+                                        <label class="form-label">Bank Name</label>
+                                        <input class="form-control" type="text" placeholder="Bank Name" required="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 col-md-3">
+                                    <div class="mb-3">
+                                        <label class="form-label">Bank Code (IFSC)</label>
+                                        <input class="form-control" type="text" placeholder="Bank Code (IFSC)" required="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 col-md-3">
+                                    <div class="mb-3">
+                                        <label class="form-label">EC Number</label>
+                                        <input class="form-control" type="text" placeholder="EC Number" required="">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="mb-3">
+                                        <label class="form-label">PF Number</label>
+                                        <input class="form-control" type="text" placeholder="PF Number">
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 col-md-3">
+                                    <div class="mb-3">
+                                        <label class="form-label">ESIC Number</label>
+                                        <input class="form-control" type="text" placeholder="ESIC Number">
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 col-md-3">
+                                    <div class="mb-3">
+                                        <label class="form-label">UAN Number</label>
+                                        <input class="form-control" type="text" placeholder="UAN Number" required="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer text-end">
+                            <button class="btn btn-primary" type="submit">Update</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-12">
+                    <form class="card">
+                        <div class="card-header">
+                            <h4 class="card-title mb-0">Address</h4>
+                            <div class="card-options">
+                                <a class="card-options-collapse" href="#" data-bs-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a>
+                                <a class="card-options-remove" href="#" data-bs-toggle="card-remove"><i class="fe fe-x"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="mb-3">
+                                        <label class="form-label">House/Flat No.</label>
+                                        <input class="form-control" type="text" placeholder="House/Flat Number" required="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 col-md-3">
+                                    <div class="mb-3">
+                                        <label class="form-label">Residency/Society Name</label>
+                                        <input class="form-control" type="text" placeholder="Residency/Society Name" required="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 col-md-3">
+                                    <div class="mb-3">
+                                        <label class="form-label">Street Name</label>
+                                        <input class="form-control" type="text" placeholder="Street Name" required="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 col-md-3">
+                                    <div class="mb-3">
+                                        <label class="form-label">Nearby Landmark</label>
+                                        <input class="form-control" type="text" placeholder="Nearby Landmark" required="">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="mb-3">
+                                        <label class="form-label">Village</label>
+                                        <input class="form-control" type="text" placeholder="Village">
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 col-md-3">
+                                    <div class="mb-3">
+                                        <label class="form-label">City/Town</label>
+                                        <input class="form-control" type="text" placeholder="City/Town">
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 col-md-3">
+                                    <div class="mb-3">
+                                        <label class="form-label">State</label>
+                                        <input class="form-control" type="text" placeholder="State" required="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 col-md-3">
+                                    <div class="mb-3">
+                                        <label class="form-label">Pin code</label>
+                                        <input class="form-control" type="number" placeholder="Pin code" required="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 col-md-3">
+                                    <div class="mb-3">
+                                        <label class="form-label">Country</label>
+                                        <input class="form-control" type="text" placeholder="Country" required="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer text-end">
+                            <button class="btn btn-primary" type="submit">Update</button>
+                        </div>
+                    </form>
+
+                </div>
+
+                <div class="col-md-12">
+                    <form class="card">
+                        <div class="card-header">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <h4 class="card-title mb-0">Relation</h4>
+                                </div>
+                                <div class="col-lg-6 d-flex justify-content-end align-items-end">
+                                    <button class="relation btn btn-primary" type="button">+ Add Relation</button>
+                                </div>
+                            </div>
+                            <div class="card-options">
+                                <a class="card-options-collapse" href="#" data-bs-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a>
+                                <a class="card-options-remove" href="#" data-bs-toggle="card-remove"><i class="fe fe-x"></i></a>
+                            </div>
+                        </div>
+                        <div class="add_to_me card-body">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="mb-3">
+                                        <label class="form-label">Relation Name</label>
+                                        <input class="form-control" type="text" placeholder="Relation Name" required="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 col-md-3">
+                                    <div class="mb-3">
+                                        <label class="form-label">Name of the person</label>
+                                        <input class="form-control" type="text" placeholder="Name of the person" required="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 col-md-3">
+                                    <div class="mb-3">
+                                        <label class="form-label">Phone Number</label>
+                                        <input class="form-control" type="text" placeholder="Phone Number" required="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer text-end">
+                            <button class="btn btn-primary" type="submit">Update</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-12">
+                    <form class="card">
+                        <div class="card-header">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <h4 class="card-title mb-0">Education</h4>
+                                </div>
+                                <div class="col-lg-6 d-flex justify-content-end align-items-end">
+                                    <button class="education btn btn-primary" type="button">+ Add Education</button>
+                                </div>
+                            </div>
+                            <div class="card-options">
+                                <a class="card-options-collapse" href="#" data-bs-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a>
+                                <a class="card-options-remove" href="#" data-bs-toggle="card-remove"><i class="fe fe-x"></i></a>
+                            </div>
+                        </div>
+                        <div class="add_to_me1 card-body">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="mb-3">
+                                        <label class="form-label">Qualification</label>
+                                        <input class="form-control" type="text" placeholder="Qualification" required="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 col-md-3">
+                                    <div class="mb-3">
+                                        <label class="form-label">Field Name</label>
+                                        <input class="form-control" type="text" placeholder="Field Name" required="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 col-md-3">
+                                    <div class="mb-3">
+                                        <label class="form-label">University/School</label>
+                                        <input class="form-control" type="text" placeholder="University/School" required="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 col-md-3">
+                                    <div class="mb-3">
+                                        <label class="form-label">Pass-out Month-Year</label>
+                                        <input class="form-control" type="month" placeholder="Pass-out Month year" required="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer text-end">
+                            <button class="btn btn-primary" type="submit">Update</button>
+                        </div>
+                    </form>
+                </div>
+                <div class=" col-md-12">
+                    <form class="card">
+                        <div class="card-header">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <h4 class="card-title mb-0">Experience</h4>
+                                </div>
+                                <div class="col-lg-6 d-flex justify-content-end align-items-end">
+                                    <button class="experience btn btn-primary" type="button">+ Add Experience</button>
+                                </div>
+                            </div>
+                            <div class="card-options">
+                                <a class="card-options-collapse" href="#" data-bs-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a>
+                                <a class="card-options-remove" href="#" data-bs-toggle="card-remove"><i class="fe fe-x"></i></a>
+                            </div>
+                        </div>
+                        <div class="add_to_me2 card-body">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="mb-3">
+                                        <label class="form-label">Last Company Name</label>
+                                        <input class="form-control" type="text" placeholder="Last Company Name" required="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 col-md-3">
+                                    <div class="mb-3">
+                                        <label class="form-label">Working Experience</label>
+                                        <input class="form-control" type="text" placeholder="Working Experience" required="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 col-md-3">
+                                    <div class="mb-3">
+                                        <label class="form-label">Leaving Month-Year</label>
+                                        <input class="form-control" type="month" placeholder="Leaving Month-Year" required="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer text-end">
+                            <button class="btn btn-primary" type="submit">Update</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="~/Content/assets/js/jquery.min.js"></script>
+
+<script src="~/Content/assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+
+<script src="~/Content/assets/js/icons/feather-icon/feather.min.js"></script>
+<script src="~/Content/assets/js/icons/feather-icon/feather-icon.js"></script>
+
+<script src="~/Content/assets/js/scrollbar/custom.js"></script>
+<script src="~/Content/assets/js/scrollbar/simplebar.js"></script>
+
+<script src="~/Content/assets/js/config.js"></script>
+
+<script src="~/Content/assets/js/clock.js"></script>
+<script src="~/Content/assets/js/slick/slick.js"></script>
+<script src="~/Content/assets/js/slick/slick.min.js"></script>
+<script src="~/Content/assets/js/header-slick.js"></script>
+<script src="~/Content/assets/js/chart/apex-chart/apex-chart.js"></script>
+<script src="~/Content/assets/js/chart/apex-chart/stock-prices.js"></script>
+<script src="~/Content/assets/js/chart/apex-chart/moment.min.js"></script>
+<script src="~/Content/assets/js/notify/index.js"></script>
+<script src="~/Content/assets/js/typeahead/typeahead.bundle.js"></script>
+<script src="~/Content/assets/js/typeahead/typeahead.custom.js"></script>
+<script src="~/Content/assets/js/typeahead-search/handlebars.js"></script>
+<script src="~/Content/assets/js/height-equal.js"></script>
+<script src="~/Content/assets/js/animation/wow/wow.min.js"></script>
+<script src="~/Content/assets/js/typeahead-search/typeahead-custom.js"></script>
+<script src="~/Content/assets/js/script.js"></script>
+<script>
+    var $template = $('.add_to_me');
+    $('.relation').click(function () {
+        $template.clone().insertAfter($template);
+    });
+    var $template1 = $('.add_to_me1');
+    $('.education').click(function () {
+        $template1.clone().insertAfter($template1);
+    });
+    var $template2 = $('.add_to_me2');
+    $('.experience').click(function () {
+        $template2.clone().insertAfter($template2);
+    });
+</script>

@@ -1,0 +1,182 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "G:\\8th Sem\\Internship\\Live Project\\Work2\\Click4Karmachari-portal\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6F077E83-0381-4090-AA40-2342CA9EF7C3}|Click4Karmachari-portal\\Click4Karmachari-portal.csproj|G:\\8th Sem\\Internship\\Live Project\\Work2\\Click4Karmachari-portal\\click4karmachari-portal\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6F077E83-0381-4090-AA40-2342CA9EF7C3}|Click4Karmachari-portal\\Click4Karmachari-portal.csproj|solutionrelative:click4karmachari-portal\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F077E83-0381-4090-AA40-2342CA9EF7C3}|Click4Karmachari-portal\\Click4Karmachari-portal.csproj|g:\\8th sem\\internship\\live project\\work2\\click4karmachari-portal\\click4karmachari-portal\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F077E83-0381-4090-AA40-2342CA9EF7C3}|Click4Karmachari-portal\\Click4Karmachari-portal.csproj|solutionrelative:click4karmachari-portal\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F077E83-0381-4090-AA40-2342CA9EF7C3}|Click4Karmachari-portal\\Click4Karmachari-portal.csproj|G:\\8th Sem\\Internship\\Live Project\\Work2\\Click4Karmachari-portal\\click4karmachari-portal\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6F077E83-0381-4090-AA40-2342CA9EF7C3}|Click4Karmachari-portal\\Click4Karmachari-portal.csproj|solutionrelative:click4karmachari-portal\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F077E83-0381-4090-AA40-2342CA9EF7C3}|Click4Karmachari-portal\\Click4Karmachari-portal.csproj|G:\\8th Sem\\Internship\\Live Project\\Work2\\Click4Karmachari-portal\\click4karmachari-portal\\views\\home\\voucher.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6F077E83-0381-4090-AA40-2342CA9EF7C3}|Click4Karmachari-portal\\Click4Karmachari-portal.csproj|solutionrelative:click4karmachari-portal\\views\\home\\voucher.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F077E83-0381-4090-AA40-2342CA9EF7C3}|Click4Karmachari-portal\\Click4Karmachari-portal.csproj|G:\\8th Sem\\Internship\\Live Project\\Work2\\Click4Karmachari-portal\\click4karmachari-portal\\views\\home\\salary.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6F077E83-0381-4090-AA40-2342CA9EF7C3}|Click4Karmachari-portal\\Click4Karmachari-portal.csproj|solutionrelative:click4karmachari-portal\\views\\home\\salary.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F077E83-0381-4090-AA40-2342CA9EF7C3}|Click4Karmachari-portal\\Click4Karmachari-portal.csproj|G:\\8th Sem\\Internship\\Live Project\\Work2\\Click4Karmachari-portal\\click4karmachari-portal\\views\\home\\statement.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6F077E83-0381-4090-AA40-2342CA9EF7C3}|Click4Karmachari-portal\\Click4Karmachari-portal.csproj|solutionrelative:click4karmachari-portal\\views\\home\\statement.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F077E83-0381-4090-AA40-2342CA9EF7C3}|Click4Karmachari-portal\\Click4Karmachari-portal.csproj|G:\\8th Sem\\Internship\\Live Project\\Work2\\Click4Karmachari-portal\\click4karmachari-portal\\views\\home\\document.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6F077E83-0381-4090-AA40-2342CA9EF7C3}|Click4Karmachari-portal\\Click4Karmachari-portal.csproj|solutionrelative:click4karmachari-portal\\views\\home\\document.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F077E83-0381-4090-AA40-2342CA9EF7C3}|Click4Karmachari-portal\\Click4Karmachari-portal.csproj|G:\\8th Sem\\Internship\\Live Project\\Work2\\Click4Karmachari-portal\\click4karmachari-portal\\views\\home\\assets.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6F077E83-0381-4090-AA40-2342CA9EF7C3}|Click4Karmachari-portal\\Click4Karmachari-portal.csproj|solutionrelative:click4karmachari-portal\\views\\home\\assets.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F077E83-0381-4090-AA40-2342CA9EF7C3}|Click4Karmachari-portal\\Click4Karmachari-portal.csproj|G:\\8th Sem\\Internship\\Live Project\\Work2\\Click4Karmachari-portal\\click4karmachari-portal\\views\\home\\voucher_req.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6F077E83-0381-4090-AA40-2342CA9EF7C3}|Click4Karmachari-portal\\Click4Karmachari-portal.csproj|solutionrelative:click4karmachari-portal\\views\\home\\voucher_req.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F077E83-0381-4090-AA40-2342CA9EF7C3}|Click4Karmachari-portal\\Click4Karmachari-portal.csproj|G:\\8th Sem\\Internship\\Live Project\\Work2\\Click4Karmachari-portal\\click4karmachari-portal\\content\\assets\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{6F077E83-0381-4090-AA40-2342CA9EF7C3}|Click4Karmachari-portal\\Click4Karmachari-portal.csproj|solutionrelative:click4karmachari-portal\\content\\assets\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "G:\\8th Sem\\Internship\\Live Project\\Work2\\Click4Karmachari-portal\\Click4Karmachari-portal\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Click4Karmachari-portal\\Controllers\\HomeController.cs",
+              "ToolTip": "G:\\8th Sem\\Internship\\Live Project\\Work2\\Click4Karmachari-portal\\Click4Karmachari-portal\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Click4Karmachari-portal\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAIwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T06:59:39.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Statement.cshtml",
+              "DocumentMoniker": "G:\\8th Sem\\Internship\\Live Project\\Work2\\Click4Karmachari-portal\\Click4Karmachari-portal\\Views\\Home\\Statement.cshtml",
+              "RelativeDocumentMoniker": "Click4Karmachari-portal\\Views\\Home\\Statement.cshtml",
+              "ToolTip": "G:\\8th Sem\\Internship\\Live Project\\Work2\\Click4Karmachari-portal\\Click4Karmachari-portal\\Views\\Home\\Statement.cshtml",
+              "RelativeToolTip": "Click4Karmachari-portal\\Views\\Home\\Statement.cshtml",
+              "ViewState": "AQIAACwAAAAAAAAAAAAgwE4AAABiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T08:40:13.483Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Document.cshtml",
+              "DocumentMoniker": "G:\\8th Sem\\Internship\\Live Project\\Work2\\Click4Karmachari-portal\\Click4Karmachari-portal\\Views\\Home\\Document.cshtml",
+              "RelativeDocumentMoniker": "Click4Karmachari-portal\\Views\\Home\\Document.cshtml",
+              "ToolTip": "G:\\8th Sem\\Internship\\Live Project\\Work2\\Click4Karmachari-portal\\Click4Karmachari-portal\\Views\\Home\\Document.cshtml",
+              "RelativeToolTip": "Click4Karmachari-portal\\Views\\Home\\Document.cshtml",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAkwHkAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T08:00:46.307Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Salary.cshtml",
+              "DocumentMoniker": "G:\\8th Sem\\Internship\\Live Project\\Work2\\Click4Karmachari-portal\\Click4Karmachari-portal\\Views\\Home\\Salary.cshtml",
+              "RelativeDocumentMoniker": "Click4Karmachari-portal\\Views\\Home\\Salary.cshtml",
+              "ToolTip": "G:\\8th Sem\\Internship\\Live Project\\Work2\\Click4Karmachari-portal\\Click4Karmachari-portal\\Views\\Home\\Salary.cshtml",
+              "RelativeToolTip": "Click4Karmachari-portal\\Views\\Home\\Salary.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAcAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T07:38:49.117Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Voucher.cshtml",
+              "DocumentMoniker": "G:\\8th Sem\\Internship\\Live Project\\Work2\\Click4Karmachari-portal\\Click4Karmachari-portal\\Views\\Home\\Voucher.cshtml",
+              "RelativeDocumentMoniker": "Click4Karmachari-portal\\Views\\Home\\Voucher.cshtml",
+              "ToolTip": "G:\\8th Sem\\Internship\\Live Project\\Work2\\Click4Karmachari-portal\\Click4Karmachari-portal\\Views\\Home\\Voucher.cshtml",
+              "RelativeToolTip": "Click4Karmachari-portal\\Views\\Home\\Voucher.cshtml",
+              "ViewState": "AQIAAMMAAAAAAAAAAAAAAGAAAAB0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T05:37:13.073Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Voucher_req.cshtml",
+              "DocumentMoniker": "G:\\8th Sem\\Internship\\Live Project\\Work2\\Click4Karmachari-portal\\Click4Karmachari-portal\\Views\\Home\\Voucher_req.cshtml",
+              "RelativeDocumentMoniker": "Click4Karmachari-portal\\Views\\Home\\Voucher_req.cshtml",
+              "ToolTip": "G:\\8th Sem\\Internship\\Live Project\\Work2\\Click4Karmachari-portal\\Click4Karmachari-portal\\Views\\Home\\Voucher_req.cshtml",
+              "RelativeToolTip": "Click4Karmachari-portal\\Views\\Home\\Voucher_req.cshtml",
+              "ViewState": "AQIAANgAAAAAAAAAAAAAAOoAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-12T06:00:05.006Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Assets.cshtml",
+              "DocumentMoniker": "G:\\8th Sem\\Internship\\Live Project\\Work2\\Click4Karmachari-portal\\Click4Karmachari-portal\\Views\\Home\\Assets.cshtml",
+              "RelativeDocumentMoniker": "Click4Karmachari-portal\\Views\\Home\\Assets.cshtml",
+              "ToolTip": "G:\\8th Sem\\Internship\\Live Project\\Work2\\Click4Karmachari-portal\\Click4Karmachari-portal\\Views\\Home\\Assets.cshtml",
+              "RelativeToolTip": "Click4Karmachari-portal\\Views\\Home\\Assets.cshtml",
+              "ViewState": "AQIAADMAAAAAAAAAAAAgwI8AAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T05:37:06.342Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "G:\\8th Sem\\Internship\\Live Project\\Work2\\Click4Karmachari-portal\\Click4Karmachari-portal\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Click4Karmachari-portal\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "G:\\8th Sem\\Internship\\Live Project\\Work2\\Click4Karmachari-portal\\Click4Karmachari-portal\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Click4Karmachari-portal\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABoAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-11T09:01:52.663Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "G:\\8th Sem\\Internship\\Live Project\\Work2\\Click4Karmachari-portal\\Click4Karmachari-portal\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Click4Karmachari-portal\\Views\\Home\\Index.cshtml",
+              "ToolTip": "G:\\8th Sem\\Internship\\Live Project\\Work2\\Click4Karmachari-portal\\Click4Karmachari-portal\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Click4Karmachari-portal\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAD4BAAB3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-27T06:54:17.15Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "style.css",
+              "DocumentMoniker": "G:\\8th Sem\\Internship\\Live Project\\Work2\\Click4Karmachari-portal\\Click4Karmachari-portal\\Content\\assets\\css\\style.css",
+              "RelativeDocumentMoniker": "Click4Karmachari-portal\\Content\\assets\\css\\style.css",
+              "ToolTip": "G:\\8th Sem\\Internship\\Live Project\\Work2\\Click4Karmachari-portal\\Click4Karmachari-portal\\Content\\assets\\css\\style.css",
+              "RelativeToolTip": "Click4Karmachari-portal\\Content\\assets\\css\\style.css",
+              "ViewState": "AQIAAMRNAAAAAAAAAAAcwNNNAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-03-27T07:19:17.213Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

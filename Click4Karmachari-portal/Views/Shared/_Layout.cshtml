@@ -1,0 +1,280 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cuba admin is super flexible, powerful, clean &amp; modern responsive bootstrap 5 admin template with unlimited possibilities.">
+    <meta name="keywords" content="admin template, Cuba admin template, dashboard template, flat admin template, responsive admin template, web app">
+    <meta name="author" content="pixelstrap">
+    <link rel="icon" href="~/Content/assets/images/logo/logoq3.png" type="image/x-icon">
+    <link rel="shortcut icon" href="~/Content/assets/images/logo/logoq3.png" type="image/x-icon">
+    <title>Click4Karmachari-Dashboard</title>
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900&amp;display=swap" rel="stylesheet">
+    <link href="~/Content/assets/css/font-awesome.css" rel="stylesheet" />
+    <link href="~/Content/assets/css/vendors/icofont.css" rel="stylesheet" />
+    <link href="~/Content/assets/css/vendors/themify.css" rel="stylesheet" />
+    <link href="~/Content/assets/css/vendors/flag-icon.css" rel="stylesheet" />
+    <link href="~/Content/assets/css/vendors/feather-icon.css" rel="stylesheet" />
+    <link href="~/Content/assets/css/vendors/slick.css" rel="stylesheet" />
+    <link href="~/Content/assets/css/vendors/slick-theme.css" rel="stylesheet" />
+    <link href="~/Content/assets/css/vendors/scrollbar.css" rel="stylesheet" />
+    <link href="~/Content/assets/css/vendors/animate.css" rel="stylesheet" />
+    <link href="~/Content/assets/css/vendors/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/assets/css/style.css" rel="stylesheet" />
+    <link href="~/Content/assets/css/color-1.css" rel="stylesheet" />
+    <link href="~/Content/assets/css/table.css" rel="stylesheet" />
+    <link href="~/Content/assets/css/responsive.css" rel="stylesheet" />
+    <link href="~/content/assets/css/vendors/todo.css" rel="stylesheet" />
+    <link href="~/content/assets/css/vendors/select2.css" rel="stylesheet" />
+    <link href="~/content/assets/css/vendors/date-picker.css" rel="stylesheet" />
+</head>
+
+<body onload="startTime()">
+    <div class="page-wrapper compact-wrapper" id="pageWrapper">
+        <div class="page-header">
+            <div class="header-wrapper row m-0">
+                <form class="form-inline search-full col" action="#" method="get">
+                    <div class="form-group w-100">
+                        <div class="Typeahead Typeahead--twitterUsers">
+                            <div class="u-posRelative">
+                                <input class="demo-input Typeahead-input form-control-plaintext w-100" type="text" placeholder="Search Click4karmachari .." name="q" title="" autofocus>
+                                <div class="spinner-border Typeahead-spinner" role="status"><span class="sr-only">Loading...</span></div><i class="close-search" data-feather="x"></i>
+                            </div>
+                            <div class="Typeahead-menu"></div>
+                        </div>
+                    </div>
+                </form>
+                <div class="header-logo-wrapper col-auto p-0">
+                    <div class="logo-wrapper"><a href="/Home/Index"><img class="img-fluid" src="~/content/assets/images/logo/main-logo-blue.png" alt=""></a></div>
+                    <div class="toggle-sidebar"><i class="status_toggle middle sidebar-toggle" data-feather="align-center"></i></div>
+                </div>
+                <div class="left-header col-xxl-5 col-xl-6 col-lg-5 col-md-4 col-sm-3 p-0">
+                    <div class="notification-slider">
+                        <div class="d-flex">
+                            <img src="~/content/assets/images/giftools.gif" alt="gif">
+                            <h6 class="mb-0 f-w-400"><span class="font-primary">Best For Employees.. </span><span class="f-light">Get everything at one place.</span></h6><i class="icon-arrow-top-right f-light"></i>
+                        </div>
+                        <div class="d-flex">
+                            <img src="~/content/assets/images/giftools.gif" alt="gif">
+                            <h6 class="mb-0 f-w-400"><span class="f-light">Something you will comfortable with </span></h6><a class="ms-1" href="https://1.envato.market/3GVzd" target="_blank">Buy now !</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-right col-xxl-7 col-xl-6 col-md-7 col-8 pull-right right-header p-0 ms-auto">
+                    <ul class="nav-menus">
+                        <li class="language-nav">
+                            <div class="translate_wrapper">
+                                <div class="current_lang">
+                                    <div class="lang"><i class="flag-icon flag-icon-us"></i><span class="lang-txt">EN</span></div>
+                                </div>
+                                <div class="more_lang">
+                                    <div class="lang selected" data-value="en"><i class="flag-icon flag-icon-us"></i><span class="lang-txt">English<span> (US)</span></span></div>
+                                    <div class="lang" data-value="de"><i class="flag-icon flag-icon-de"></i><span class="lang-txt">Deutsch</span></div>
+                                    <div class="lang" data-value="es"><i class="flag-icon flag-icon-es"></i><span class="lang-txt">Español</span></div>
+                                    <div class="lang" data-value="fr"><i class="flag-icon flag-icon-fr"></i><span class="lang-txt">Français</span></div>
+                                    <div class="lang" data-value="pt"><i class="flag-icon flag-icon-pt"></i><span class="lang-txt">Português<span> (BR)</span></span></div>
+                                    <div class="lang" data-value="cn"><i class="flag-icon flag-icon-cn"></i><span class="lang-txt">简体中文</span></div>
+                                    <div class="lang" data-value="ae"><i class="flag-icon flag-icon-ae"></i><span class="lang-txt">لعربية <span> (ae)</span></span></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mode active">
+                                <svg>
+                                    <use href="~/content/assets/svg/icon-sprite.svg#moon"></use>
+                                </svg>
+                            </div>
+                        </li>
+                        <li class="onhover-dropdown">
+                            <div class="notification-box">
+                                <svg>
+                                    <use href="~/content/assets/svg/icon-sprite.svg#notification"></use>
+                                </svg><span class="badge rounded-pill badge-secondary">2 </span>
+                            </div>
+                            <div class="onhover-show-div notification-dropdown">
+                                <h6 class="f-18 mb-0 dropdown-title">Notitications</h6>
+                                <ul>
+                                    <li class="b-l-primary border-4">
+                                        <p>Khushi's Birthday' <span class="font-danger">Today.</span></p>
+                                    </li>
+                                    <li class="b-l-success border-4">
+                                        <p>Order Complete<span class="font-success">1 hr</span></p>
+                                    </li>
+                                    <li><a class="f-w-700" href="#">Check all</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="profile-nav onhover-dropdown pe-0 py-0">
+                            <div class="media profile-media">
+                                <img class="img-40 rounded-circle" src="~/content/assets/images/user/121.png" style="height:35px; width:35px;" alt="">
+                                <div class="media-body">
+                                    <span>Manan Patel</span>
+                                    <p class="mb-0">Employee <i class="middle fa fa-angle-down"></i></p>
+                                </div>
+                            </div>
+                            <ul class="profile-dropdown onhover-show-div">
+                                <li><a href="#"><i data-feather="user"></i><span>Account </span></a></li>
+                                <li><a href="/Home/Daily_task"><i data-feather="file-text"></i><span>Taskboard</span></a></li>
+                                <li><a href="/Home/Login"><i data-feather="log-out"> </i><span>Log out</span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <script class="result-template" type="text/x-handlebars-template">
+                    <div class="ProfileCard u-cf">
+                        <div class="ProfileCard-avatar"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-airplay m-0"><path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path><polygon points="12 15 17 21 7 21 12 15"></polygon></svg></div>
+                        <div class="ProfileCard-details">
+                            <div class="ProfileCard-realName">{{name}}</div>
+                        </div>
+                    </div>
+                </script>
+                <script class="empty-template" type="text/x-handlebars-template">
+                    <div class="EmptyMessage">Your search turned up 0 results. This most likely means the backend is down, yikes!</div>
+                </script>
+            </div>
+        </div>
+        <div class="page-body-wrapper">
+            <div class="sidebar-wrapper" sidebar-layout="stroke-svg">
+                <div>
+                    <div class="logo-wrapper">
+                        <a href="/Home/Index"><img class="img-fluid for-light" src="~/content/assets/images/logo/main-logo-blue.png" style="height:60px; width:170px; position:relative; left:0;" alt=""><img class="img-fluid for-dark" src="~/content/assets/images/logo/main-logo-blue.png" style="height:60px; width:180px; position:relative; left:0;" alt=""></a>
+                        <div class="toggle-sidebar"><i class="status_toggle middle sidebar-toggle" data-feather="grid" style=" left: 0px; z-index: -2; top: -8px;"> </i></div>
+                    </div>
+                    <div class="logo-icon-wrapper"><a href="index.html"><img class="img-fluid" src="~/content/assets/images/logo/logoq1.png" style="height:40px; width:40px;" alt=""></a></div>
+                    <nav class="sidebar-main">
+                        <div class="left-arrow" id="left-arrow"><i data-feather="arrow-left"></i></div>
+                        <div id="sidebar-menu">
+                            <ul class="sidebar-links" id="simple-bar">
+                                <li class="sidebar-main-title">
+                                    <div>
+                                        <h6 class="lan-1">General</h6>
+                                    </div>
+                                </li>
+                                <li class="sidebar-list mb-3 mt-3">
+                                    <a class="sidebar-link sidebar-title link-nav" href="/Home/Index">
+                                        <i class="fa fa-dashboard fs-4 font-primary me-2"></i>
+                                        <span class="fs-6">Dashboard       </span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-list mb-3">
+                                    <a class="sidebar-link sidebar-title link-nav" href="/Home/Details">
+                                        <i class="fa fa-list-alt fs-4 font-dark me-2"></i>
+                                        <span class="fs-6">Details       </span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-list mb-3">
+                                    <a class="sidebar-link sidebar-title link-nav" href="#">
+                                        <i class="fa fa-list-ol fs-4 font-danger me-2"></i>
+                                        <span class="fs-6">Tasks</span>
+                                    </a>
+                                    <ul class="sidebar-submenu">
+                                        <li><a href="/Home/Project_task">Project Tasks</a></li>
+                                        <li><a href="/Home/Daily_task">Daily Tasks</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sidebar-list mb-3">
+                                    <a class="sidebar-link sidebar-title link-nav" href="#">
+                                        <i class="fa fa-bookmark-o fs-4 font-success me-3"></i>
+                                        <span class="fs-6">Vouchers       </span>
+                                    </a>
+                                    <ul class="sidebar-submenu">
+                                        <li><a href="/Home/voucher">Advance Request</a></li>
+                                        <li><a href="/Home/Voucher_req">Voucher Request</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sidebar-list mb-3">
+                                    <a class="sidebar-link sidebar-title link-nav" href="/Home/Resignation">
+                                        <i class="fa fa-pencil-square-o fs-4 font-dark me-3"></i>
+                                        <span class="fs-6">Resignation       </span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-list mb-3">
+                                    <a class="sidebar-link sidebar-title link-nav" href="/Home/Statement">
+                                        <i class="fa fa-folder fs-4 font-primary me-3"></i>
+                                        <span class="fs-6">statement       </span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-list mb-3">
+                                    <a class="sidebar-link sidebar-title link-nav" href="/Home/Assets">
+                                        <i class="fa fa-paperclip fs-4 me-3"></i>
+                                        <span class="fs-6">Assest Mov.       </span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-list mb-3">
+                                    <a class="sidebar-link sidebar-title link-nav" href="/Home/Leaves">
+                                        <i class="fa fa-share-square-o fs-4 font-secondary me-3"></i>
+                                        <span class="fs-6">Leaves       </span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-list mb-3">
+                                    <a class="sidebar-link sidebar-title link-nav" href="/Home/Document">
+                                        <i class="fa fa-file-text-o fs-4 font-warning me-3"></i>
+                                        <span class="fs-6">Document       </span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-list mb-3">
+                                    <a class="sidebar-link sidebar-title link-nav" href="/Home/Salary">
+                                        <i class="fa fa-book fs-4 font-success me-3"></i>
+                                        <span class="fs-6">Salary slip       </span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-list mb-3">
+                                    <a class="sidebar-link sidebar-title link-nav" href="/Home/Login">
+                                        <i class="fa fa-sign-out fs-4 font-secondary me-3"></i>
+                                        <span class="fs-6">Log out       </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="right-arrow" id="right-arrow"><i data-feather="arrow-right"></i></div>
+                    </nav>
+                </div>
+            </div>
+            @RenderBody()
+            <footer class="footer">
+                <div class="row">
+                    <div class="col-md-12 footer-copyright text-center ">
+                        <p class="mb-0">Copyright 2024 © <span class="font-primary" style="color: #012e58; "><b>Click4Karmachari</b></span>. All Rights Reserved. Hand Crafted & Made With <i class="fa fa-heart" style="color:#fe2228;margin:0px 3px;"></i> By<a href="https://mbhtechnologies.com" ; target="_blank"> <span style="color: #012e58;"><b>MBH Technologies Pvt. Ltd.</b></span></a></p>
+                    </div>
+                </div>
+        </div>
+        </footer>
+    </div>
+
+    <script src="~/Content/assets/js/jquery.min.js"></script>
+
+    <script src="~/Content/assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+
+    <script src="~/Content/assets/js/icons/feather-icon/feather.min.js"></script>
+    <script src="~/Content/assets/js/icons/feather-icon/feather-icon.js"></script>
+
+    <script src="~/Content/assets/js/scrollbar/custom.js"></script>
+    <script src="~/Content/assets/js/scrollbar/simplebar.js"></script>
+
+    <script src="~/Content/assets/js/config.js"></script>
+    <script src="~/content/assets/js/sidebar-pin.js"></script>
+    <script src="~/Content/assets/js/sidebar-menu.js"></script>
+
+    <script src="~/Content/assets/js/clock.js"></script>
+    <script src="~/Content/assets/js/slick/slick.js"></script>
+    <script src="~/Content/assets/js/slick/slick.min.js"></script>
+    <script src="~/Content/assets/js/header-slick.js"></script>
+    <script src="~/Content/assets/js/chart/apex-chart/apex-chart.js"></script>
+    <script src="~/Content/assets/js/chart/apex-chart/stock-prices.js"></script>
+    <script src="~/Content/assets/js/chart/apex-chart/moment.min.js"></script>
+    <script src="~/Content/assets/js/notify/index.js"></script>
+    <script src="~/content/assets/js/dashboard/default.js"></script>
+    <script src="~/Content/assets/js/typeahead/typeahead.bundle.js"></script>
+    <script src="~/Content/assets/js/typeahead/typeahead.custom.js"></script>
+    <script src="~/Content/assets/js/typeahead-search/handlebars.js"></script>
+    <script src="~/Content/assets/js/height-equal.js"></script>
+    <script src="~/Content/assets/js/animation/wow/wow.min.js"></script>
+    <script src="~/Content/assets/js/typeahead-search/typeahead-custom.js"></script>
+    <script src="~/Content/assets/js/script.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>new WOW().init();</script>
+
+</body>
+</html>
